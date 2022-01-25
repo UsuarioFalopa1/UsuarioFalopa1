@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello user</title>
+    </head>
+<body>
+    <h2>Edit Person</h2>
+    <form method="GET">
+        <table style="color: rgb(90, 20, 220);">
+           {{formPerson}} 
+        </table>
+        <button type="submit">Send</button>
+        {% csrf_token %}
+    </form>
+</body>
+</html>
